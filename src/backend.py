@@ -27,7 +27,7 @@ if not GEMINI_API_KEY:
 genai.configure(api_key=GEMINI_API_KEY)
 
 # You can use 1.5-flash (fast, free-tier friendly) or 1.5-pro (stronger, slower)
-GEMINI_MODEL_NAME = "gemini-1.5-flash"
+GEMINI_MODEL_NAME = "gemini-flash-latest" # changed from gemini-1.5-flash to gemini-flash-latest
 gemini_model = genai.GenerativeModel(GEMINI_MODEL_NAME)
 
 # === Connect to your LlamaCloud index ===
